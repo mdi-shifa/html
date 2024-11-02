@@ -5,9 +5,63 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FORM</title>
 
-    
+    <form action="/action.php">
+        <!-- labels -->
+        <h4>Enter your details</h4>
+            <input type="text" placeholder="Enter name">
+        <br><br>
+            <input type="password" placeholder="Enter password">
+        <br><br>
+
+        <!-- radio button and label-->
+         <h4>Enter your class</h4>
+        <label for="101"> 
+            <input type="radio" value="class XI" name="class" id="101">class XI
+        </label>
+
+        <label for="102"> 
+            <input type="radio" value="class XII" name="class" id="102">class XII
+        </label>
+        
+        <br><br>
+
+        <h4>Enter the subjects you have</h4>
+        <label>
+            <input type="checkbox" value="english" name="subject" id="101">english
+        </label>
+        <br>
+
+        <label>
+            <input type="checkbox" value="arabic" name="subject" id="102">arabic
+        </label>
+        <br>
+
+        <label>
+            <input type="checkbox" value="urdu" name="subject" id="103">urdu
+        </label>
+        <br>
+
+        <label>
+            <input type="checkbox" value="computer science" name="subject" id="104">computer science
+        </label>
+        <br><br>
+
+    <!-- dropdown -->
+        <h4>Select your city</h4>
+        <select name="city" id="city">
+            <option value="Delhi">Delhi</option>
+            <option value="Bangalore">Bangalore</option>
+            <option value="kashmir">kashmir</option>
+
+        </select>
+        <br><br>
+    <!-- textarea for feedback -->
+        <h4>Feedback</h4>
+            <textarea name="feedback" id="101" placeholder="please enter your valuable feedback" rows="5"></textarea>
+        <br><br>
+    <!-- submit button -->
+        <input type="submit" value="submit">
+
+    </form>
 </head>
-<body>
-    
-</body>
 </html>
